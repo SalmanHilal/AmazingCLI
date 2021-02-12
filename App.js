@@ -12,6 +12,7 @@ import React from 'react';
 import {  StyleSheet, Text } from 'react-native';
 import HomeScreen from './src/components/screens/HomeScreen';
 import AboutScreen from './src/components/screens/AboutScreen';
+import UsersScreen from './src/components/screens/UsersScreen';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="About" component={AboutScreen} />
+        <Stack.Screen name="Users" component={UsersScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
